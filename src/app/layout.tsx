@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import clsx from "clsx";
 import "./globals.css";
+import React from 'react'
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
