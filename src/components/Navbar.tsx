@@ -1,7 +1,8 @@
 import React from 'react'
 import logoImage from '@/assets/images/logosaas.png'
 import MenuIcon from '@/assets/icons/menu.svg'
-import Image from 'next/image'
+import Image from 'next/image';
+import {motion} from 'framer-motion'
 
 const Navbar = () => {
   return (
