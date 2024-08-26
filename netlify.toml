@@ -1,0 +1,9 @@
+[build]
+  # Set the base directory for the build
+  base = "/"  # Use this if the root of your repo is your base directory
+
+  # Set the directory where the build output is located
+  publish = "out"  # For static sites, change to your build output directory
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
