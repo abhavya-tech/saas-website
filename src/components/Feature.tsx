@@ -14,17 +14,16 @@ const Feature = ({ title, description }: { title: string; description: string })
         
     
         useEffect(() => {
-       
-        const updateMousePosition = (e: MouseEvent) => {
-
+          const updateMousePosition = (e: MouseEvent) => {
             if (!borderRef.current) return;
             const borderRect = borderRef.current?.getBoundingClientRect();
-            offsetX.set( e.x - borderRect?.x);
-             offsetY.set(e.y - borderRect?.y);
-        }
-        window.addEventListener('mousemove', updateMousePosition);
-        return ()=> window.removeEventListener('mousemove',updateMousePosition)
-    }, [])
+            offsetX.set(e.x - borderRect?.x);
+            offsetY.set(e.y - borderRect?.y);
+          };
+          window.addEventListener("mousemove", updateMousePosition);
+          return () =>
+            window.removeEventListener("mousemove", updateMousePosition);
+        }, [offsetX, offsetY]);
     
 
   return (

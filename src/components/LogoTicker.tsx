@@ -25,7 +25,7 @@ const LogoTicker = () => {
     <div className="bg-black text-white py-[72px] py-24">
       <div className="container">
         <h2 className="text-xl text-center text-white/70">
-          Trusted by world's most innovative teams
+          Trusted by world most innovative teams
         </h2>
         <div
           className=" flex overflow-hidden mt-9 before:content-[''] after:content-[''] before:absolute
@@ -34,7 +34,7 @@ const LogoTicker = () => {
         
          before:left-0 after:right-0
          before:top-0 after:top-0
-         before:bg-[linear-gradient(to_right,#000,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#000,rgb(0,0,0,0))]  "
+         before:bg-[linear-gradient(to_right,#000,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#000,rgb(0,0,0,0))] "
         >
           <motion.div
             className="flex flex-none
@@ -48,10 +48,10 @@ const LogoTicker = () => {
             animate={{ translateX: "-50%" }}
           >
             {images.map(({ src, alt }) => (
-              <Image src={src} alt={alt} className="flex-none h-8 w-auto" />
+              <Image src={src} alt={alt} className="flex-none h-8 w-auto" key={alt} />
             ))}
             {images.map(({ src, alt }) => (
-              <Image src={src} alt={alt} className="flex-none h-8 w-auto" />
+              <Image src={src} alt={alt} className="flex-none h-8 w-auto" key={alt} />
             ))}
           </motion.div>
         </div>
