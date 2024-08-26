@@ -1,6 +1,6 @@
 [build]
-  base = "/"  # Root directory
-  publish = ".next"  # Directory where Next.js generates server-side files
+  base = "/"  # Base directory for the build
+  publish = "out"  # Directory where static files are output
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
