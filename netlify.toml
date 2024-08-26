@@ -1,5 +1,5 @@
 [build]
-  base = "/"  # Base directory for the build
+  base = "/"       # Root directory where Netlify installs dependencies and runs the build command
   publish = "out"  # Directory where static files are output
 
 [[plugins]]
